@@ -45,7 +45,10 @@
     "workbench.settings.editor": "json",
     "workbench.editor.restoreViewState": false,
     "workbench.settings.useSplitJSON": true,
+    "terminal.integrated.allowChords": false,
     "terminal.integrated.macOptionIsMeta": true,
     "extensions.ignoreRecommendations": true,
     "editor.largeFileOptimizations": false,
+    "workbench.statusBar.visible": false,
+    "editor.minimap.enabled": false,
 }
