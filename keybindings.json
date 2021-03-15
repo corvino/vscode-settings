@@ -13,11 +13,9 @@
     { "key": "ctrl+y", "command": "editor.action.clipboardPasteAction", "when": "textInputFocus && !editorReadonly" },
     { "key": "ctrl+s", "command": "actions.find" },
     { "key": "ctrl+j", "command": "type", "args": { "text": "\n" }, "when": "textInputFocus && !editorReadonly" },
-    { "key": "ctrl+x 3", "command": "workbench.action.splitEditor" },
-    { "key": "ctrl+x 2", "command": "workbench.action.splitEditorOrthogonal" },
     { "key": "cmd+d", "command": "deleteWordRight", "when": "textInputFocus && !editorReadonly" },
     { "key": "cmd+backspace", "command": "deleteWordLeft", "when": "textInputFocus && !editorReadonly" },
-    { "key": "alt+backspace", "command": "deleteAllLeft", "when": "textInputFocus && !editorReadonly" },
+    { "key": "alt+backspace", "command": "deleteWordLeft", "when": "textInputFocus && !editorReadonly" },
     { "key": "cmd+k", "command": "deleteAllLeft", "when": "textInputFocus && !editorReadonly" },
 //    { "key": "ctrl+i", "command": "editor.action.formatSelection", "when": "editorHasDocumentSelectionFormattingProvider && editorTextFocus && !editorReadonly" },
 //    { "key": "ctrl+i", "command": "editor.action.formatSelection", "when": "editorHasDocumentSelectionFormattingProvider && editorHasDocumentSelectionFormattingProvider && editorTextFocus && !editorReadonly" },
@@ -40,5 +38,42 @@
     { "key": "cmd+o", "command": "workbench.action.debug.stepOver", "when": "debugState == 'stopped'" },
     { "key": "cmd+i", "command": "workbench.action.debug.stepInto", "when": "debugState == 'stopped'" },
     { "key": "cmd+t", "command": "workbench.action.debug.stepOut", "when": "debugState == 'stopped'" },
-    { "key": "cmd+p", "command": "workbench.action.debug.continue", "when": "inDebugMode" },
+    {
+        "key": "cmd+p",
+        "command": "workbench.action.debug.continue",
+        "when": "inDebugMode"
+    },
+    {
+        "key": "cmd+l",
+        "command": "-expandLineSelection",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "cmd+l",
+        "command": "workbench.action.editor.changeLanguageMode"
+    },
+    {
+        "key": "cmd+k m",
+        "command": "-workbench.action.editor.changeLanguageMode"
+    },
+    {
+        "key": "ctrl+x ctrl+j",
+        "command": "editor.foldAll",
+        "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+        "key": "cmd+k cmd+0",
+        "command": "-editor.foldAll",
+        "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+        "key": "ctrl+x ctrl+k",
+        "command": "editor.unfoldAll",
+        "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+        "key": "cmd+k cmd+j",
+        "command": "-editor.unfoldAll",
+        "when": "editorTextFocus && foldingEnabled"
+    },
 ]

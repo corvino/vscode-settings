@@ -3,11 +3,49 @@
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
     "window.zoomLevel": 0,
-    "[ruby]": {
-        "editor.insertSpaces": true,
-        "editor.tabSize": 2,
-        "editor.detectIndentation": false
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    "editor.tabSize": 4,
+    "files.associations": {
+        "user-data": "yaml",
     },
+    "[ruby]": {
+        "editor.tabSize": 2,
+    },
+    "[leaf]": {
+        "editor.tabSize": 2
+    },
+    "[javascript]": {
+        "editor.tabSize": 2,
+    },
+    "[javascriptreact]": {
+        "editor.tabSize": 2,
+    },
+    "[html]": {
+        "editor.tabSize": 2,
+    },
+    "[njk]": {
+        "editor.tabSize": 2,
+    },
+    "[css]": {
+        "editor.tabSize": 2,
+    },
+    "[scss]": {
+        "editor.tabSize": 2
+    },
+    "[typescript]": {
+        "editor.tabSize": 2
+    },
+    "[terraform]": { "editor.tabSize": 2 },
     "ruby.format": "rufo",
-    "workbench.iconTheme": "vscode-icons"
+    "workbench.iconTheme": "vscode-icons",
+    "editor.wordWrap": "on",
+    "javascript.implicitProjectConfig.experimentalDecorators": true,
+    "javascript.suggest.autoImports": false,
+    "workbench.settings.editor": "json",
+    "workbench.editor.restoreViewState": false,
+    "workbench.settings.useSplitJSON": true,
+    "terminal.integrated.macOptionIsMeta": true,
+    "extensions.ignoreRecommendations": true,
+    "editor.largeFileOptimizations": false,
 }
