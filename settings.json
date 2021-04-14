@@ -8,7 +8,16 @@
     "editor.tabSize": 4,
     "files.associations": {
         "user-data": "yaml",
+        ".compilerc": "jsonc",
+        "*.njson": "ndjson",
+        "*.ndjson": "ndjson"
     },
+    "[json]": {
+      "editor.tabSize": 2,
+    },
+    "[jsonc]": {
+        "editor.tabSize": 2,
+      },
     "[ruby]": {
         "editor.tabSize": 2,
     },
@@ -21,6 +30,7 @@
     "[javascriptreact]": {
         "editor.tabSize": 2,
     },
+
     "[html]": {
         "editor.tabSize": 2,
     },
@@ -35,6 +45,9 @@
     },
     "[typescript]": {
         "editor.tabSize": 2
+    },
+    "[typescriptreact]": {
+      "editor.tabSize": 2
     },
     "[terraform]": { "editor.tabSize": 2 },
     "ruby.format": "rufo",
