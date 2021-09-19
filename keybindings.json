@@ -148,5 +148,14 @@
     {
       "key": "alt+cmd+n",
       "command": "-extension.advancedNewFile"
+    },
+    {
+      "key": "ctrl+cmd+\\",
+      "command": "editor.action.format"
+    },
+    {
+      "key": "ctrl+;",
+      "command": "editor.action.triggerSuggest",
+      "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
     }
 ]

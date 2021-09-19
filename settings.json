@@ -8,17 +8,42 @@
     "editor.tabSize": 4,
     "files.associations": {
         "user-data": "yaml",
+        "*.tftpl": "yaml",
         ".compilerc": "jsonc",
         "*.njson": "ndjson",
         "*.ndjson": "ndjson"
+    },
+    "ruby.format": "rufo",
+    "workbench.iconTheme": "vscode-icons",
+    "editor.wordWrap": "on",
+    "js/ts.implicitProjectConfig.experimentalDecorators": true,
+    "javascript.suggest.autoImports": false,
+    "workbench.settings.editor": "json",
+    "workbench.editor.restoreViewState": false,
+    "workbench.settings.useSplitJSON": true,
+    "terminal.integrated.allowChords": false,
+    "terminal.integrated.macOptionIsMeta": true,
+    "extensions.ignoreRecommendations": true,
+    "editor.largeFileOptimizations": false,
+    "workbench.statusBar.visible": false,
+    "editor.minimap.enabled": false,
+    "gopls": {
+      "gofumpt": true
+    },
+
+    // Language Settings
+
+    "[css]": {
+      "editor.tabSize": 2,
+    },
+    "[go]": {
+      "editor.formatOnSave": true,
+      "editor.tabSize": 8,
     },
     "[json]": {
       "editor.tabSize": 2,
     },
     "[jsonc]": {
-        "editor.tabSize": 2,
-      },
-    "[ruby]": {
         "editor.tabSize": 2,
     },
     "[leaf]": {
@@ -37,8 +62,8 @@
     "[njk]": {
         "editor.tabSize": 2,
     },
-    "[css]": {
-        "editor.tabSize": 2,
+    "[ruby]": {
+      "editor.tabSize": 2,
     },
     "[scss]": {
         "editor.tabSize": 2
@@ -49,19 +74,7 @@
     "[typescriptreact]": {
       "editor.tabSize": 2
     },
-    "[terraform]": { "editor.tabSize": 2 },
-    "ruby.format": "rufo",
-    "workbench.iconTheme": "vscode-icons",
-    "editor.wordWrap": "on",
-    "javascript.implicitProjectConfig.experimentalDecorators": true,
-    "javascript.suggest.autoImports": false,
-    "workbench.settings.editor": "json",
-    "workbench.editor.restoreViewState": false,
-    "workbench.settings.useSplitJSON": true,
-    "terminal.integrated.allowChords": false,
-    "terminal.integrated.macOptionIsMeta": true,
-    "extensions.ignoreRecommendations": true,
-    "editor.largeFileOptimizations": false,
-    "workbench.statusBar.visible": false,
-    "editor.minimap.enabled": false,
+    "[terraform]": {
+      "editor.tabSize": 2
+    },
 }
