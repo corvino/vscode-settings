@@ -66,6 +66,9 @@
     "[scss]": {
         "editor.tabSize": 2
     },
+    "[sql]": {
+      "editor.tabSize": 2
+    },
     "[typescript]": {
         "editor.tabSize": 2
     },
@@ -75,4 +78,7 @@
     "[terraform]": {
       "editor.tabSize": 2
     },
+    "editor.renderWhitespace": "all",
+    "lldb.library": "/Applications/Xcode-13.3.app/Contents/SharedFrameworks/LLDB.framework/Versions/A/LLDB",
+    "workbench.statusBar.visible": false
 }

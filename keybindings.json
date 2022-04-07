@@ -38,14 +38,9 @@
     },
     { "key": "cmd+\\", "command": "editor.debug.action.toggleBreakpoint", "when": "editorTextFocus" },
 
-    { "key": "cmd+o", "command": "workbench.action.debug.stepOver", "when": "debugState == 'stopped'" },
+    { "key": "f6", "command": "workbench.action.debug.stepOver", "when": "debugState == 'stopped'" },
     { "key": "cmd+i", "command": "workbench.action.debug.stepInto", "when": "debugState == 'stopped'" },
-    { "key": "cmd+t", "command": "workbench.action.debug.stepOut", "when": "debugState == 'stopped'" },
-    {
-        "key": "cmd+p",
-        "command": "workbench.action.debug.continue",
-        "when": "inDebugMode"
-    },
+    { "key": "f8", "command": "workbench.action.debug.stepOut", "when": "debugState == 'stopped'" },
     {
         "key": "cmd+l",
         "command": "-expandLineSelection",
@@ -142,10 +137,6 @@
       "command": "editor.action.reindentselectedlines"
     },
     {
-      "key": "cmd+n",
-      "command": "extension.advancedNewFile"
-    },
-    {
       "key": "alt+cmd+n",
       "command": "-extension.advancedNewFile"
     },
@@ -185,5 +176,57 @@
     {
       "key": "cmd+/",
       "command": "workbench.action.toggleStatusbarVisibility"
+    },
+    {
+      "key": "cmd+n",
+      "command": "-workbench.action.files.newUntitledFile"
+    },
+    {
+      "key": "cmd+n",
+      "command": "explorer.newFile"
+    },
+    {
+      "key": "f6",
+      "command": "-workbench.action.debug.pause",
+      "when": "debugState == 'running'"
+    },
+    {
+      "key": "f6",
+      "command": "-workbench.action.focusNextPart"
+    },
+    {
+      "key": "f10",
+      "command": "-workbench.action.debug.stepOver",
+      "when": "debugState == 'stopped'"
+    },
+    {
+      "key": "f7",
+      "command": "workbench.action.debug.stepInto",
+      "when": "debugState != 'inactive'"
+    },
+    {
+      "key": "f11",
+      "command": "-workbench.action.debug.stepInto",
+      "when": "debugState != 'inactive'"
+    },
+    {
+      "key": "f7",
+      "command": "-editor.action.wordHighlight.next",
+      "when": "editorTextFocus && hasWordHighlights"
+    },
+    {
+      "key": "f7",
+      "command": "-editor.action.diffReview.next",
+      "when": "isInDiffEditor"
+    },
+    {
+      "key": "f8",
+      "command": "-editor.action.marker.nextInFiles",
+      "when": "editorFocus"
+    },
+    {
+      "key": "shift+f11",
+      "command": "-workbench.action.debug.stepOut",
+      "when": "debugState == 'stopped'"
     }
 ]
