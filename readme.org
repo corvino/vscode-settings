@@ -1,0 +1,9 @@
+* Visual Studio Code Settings
+
+Settings for [[https://code.visualstudio.com][Visual Studio Code]].
+
+** Setup
+
+Run ~setup.sh~.
+
+WARNING: It will delete =~/Library/Application Support/Code/User= in order to clone this repo into that location.
